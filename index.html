@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather App</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="logo">
+                    <li>
+                        <a href="#">Weather App</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="banner">
+                <div class="overlay">
+                    <h3 id="banner-msg"></h3>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="title">ENTER CITY NAME</h3>
+                        <span id="error"></span>
+                    </div>
+                    <div class="row form-group " id="cityDiv">
+                        <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
+                        <button id="submitCity" class="btn">Search City</button>
+                    </div>
+                </div>
+                <div id="showWeather"></div>
+            </section>
+
+        </main>
+        
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/weather.js"></script>
+    </body>
+</html>
