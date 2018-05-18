@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#submitCity").click(function () {
+    $("#city").keyup(function () {
         return getWeather();
     });
 
@@ -13,7 +13,7 @@ function getWeather() {
     if (city != '') {
 
         $.ajax({
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=c10bb3bd22f90d636baa008b1529ee25",
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=c10bb3bd22f90d636baa008b1529ee25",
             type: "GET",
             dataType: "jsonp",
             success: function (data) {
